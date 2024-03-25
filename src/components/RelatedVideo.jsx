@@ -16,7 +16,7 @@ const RelatedVideo = ({videoInfo}) => {
   },[])
 
   const getRelatedVideos = async() => {
-    const data = await fetch(RELATED_VIDEO_API+categoryId+"&key="+import.meta.env.VITE_GOOGLE_API_KEY);
+    const data = await fetch(RELATED_VIDEO_API+categoryId+"&key="+"AIzaSyCNUD1YeGurGXdowiptR1Bl7CGeggdaVfs");
     const json = await data.json();
     setRelatedVideos(json?.items);
   }
