@@ -1,4 +1,4 @@
-import { API_KEY } from "../../config";
+
 
 export const OFFSET_LIVE_CHAT = 15;
 
@@ -13,7 +13,7 @@ export const YOUTUBE_CHANNEL_INFO_API =
 
 
 export const YOUTUBE_API =
-"https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+API_KEY;
+"https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+ import.meta.env.VITE_API_KEY;
   
 
 export const VIDEO_DATA_API =
