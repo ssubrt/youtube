@@ -80,7 +80,7 @@ const Searchbar = () => {
           <div className={`absolute bg-white overflow-hidden top-12 left-0 right-0 rounded-md ${suggestions.length !== 0 && 'border'}`}>
             {suggestions.length === 0 ? (
               searchQuery !== "" && (
-                <h1 className="text-center py-2">No result found</h1>
+                <h1 className="text-center py-2">Download Cors Extention on it  for suggestions </h1>
               )
             ) : (
               <ul className="py-3 space-y-1">
