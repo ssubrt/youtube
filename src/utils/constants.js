@@ -1,3 +1,5 @@
+import { API_KEY } from "../../config";
+
 export const OFFSET_LIVE_CHAT = 15;
 
 export const RELATED_VIDEO_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&videoCategoryId=";
@@ -11,7 +13,7 @@ export const YOUTUBE_CHANNEL_INFO_API =
 
 
 export const YOUTUBE_API =
-"https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+"AIzaSyCNUD1YeGurGXdowiptR1Bl7CGeggdaVfs";
+"https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+API_KEY;
   
 
 export const VIDEO_DATA_API =

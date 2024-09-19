@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Comment from "./Comment";
+import { API_KEY } from "../../config";
 
 
 
@@ -18,7 +19,7 @@ const CommentSection = ({ videoId }) => {
       "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&order=relevance&videoId="+
         videoId+
         "&key="+
-        "AIzaSyCNUD1YeGurGXdowiptR1Bl7CGeggdaVfs"
+        API_KEY
 
     );
     const json = await data.json();

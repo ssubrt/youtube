@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Search from "../assets/Icons/search.svg";
 import Mic from "../assets/Icons/voice-search-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,7 +33,7 @@ const Searchbar = () => {
   const isInputOnFocus = useSelector(store => store.app.isInputOnFocus);
 
   const getSearchSuggestions = async () => {
-    const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API + searchQuery);
+    const data = await fetch( YOUTUBE_SEARCH_SUGGESTION_API + searchQuery);
     const json = await data.json();
     setSuggestions(json[1]);
     dispatch(

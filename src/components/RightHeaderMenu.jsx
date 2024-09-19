@@ -17,7 +17,7 @@ const RightHeaderMenu = () => {
     <div
         id="right-menu"
         className="hidden md:flex justify-between items-center gap-2 md:gap-6 px-2
-        dark:bg-zinc-900 dark:text-white transition-all duration-500"
+        dark:text-white transition-all duration-500"
       >
          
 

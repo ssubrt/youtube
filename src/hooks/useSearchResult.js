@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {    YOUTUBE_SEARCH_API } from "../utils/constants";
 import { convertToSearchQuery } from "../utils/helperFunction";
+import { API_KEY } from "../../config";
 
   
 
@@ -18,7 +19,7 @@ const useSearchResults = (searchQuery) => {
       YOUTUBE_SEARCH_API +
         query +
         "&regionCode=IN&type=video&key="
-        +"AIzaSyCNUD1YeGurGXdowiptR1Bl7CGeggdaVfs"
+        +API_KEY
     );
     const json = await data.json();
     setVideos(json?.items);
